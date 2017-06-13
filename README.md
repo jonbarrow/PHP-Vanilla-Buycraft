@@ -7,7 +7,26 @@ A basic "BuyCraft" implementation written in PHP for pure vanilla Minecraft serv
 - Composer
 - php7.0.9+ (This is recommended, but not required. **I built this in php7.0.9, and cannot promise it will work in other versions!**)
 
-## Ports
+# Commands and messages
+In this current implementation, only one command is supported when an item is bought. This can easily be changed to be an array of commands which is looped, or by having the single command set a score/tag in-game, and then run more commands via command blocks on the server.
+
+When a payment is successful, the script will run both the payment command as well as send a message in chat. This message is sent via `tellraw` targeting all players (`@a`) and uses JSON as it's input.
+
+Both the command and message support several placeholders for data based on the purchase. See below for details
+
+# Placeholders
+> {product} -> placeholder which displays the bought product
+> {amount}  -> placeholder which displays the amount of the product
+> {price}   -> placeholder which displays the price of the product
+> {player}  -> placeholder which displays the player who bought the product
+
+Example usage (command):
+> give {player} stone {amount} 0
+
+Example usage (message):
+> {"text":"Thank you {player} for the donation of {price}, enjoy your {product}!"}
+
+# Ports
 - __[PHP (Slim3+Twig) - Uses PayPal](https://github.com/RedDuckss/PHP-Vanilla-Buycraft/)__
 
 # Setup
