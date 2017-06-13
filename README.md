@@ -8,7 +8,7 @@ A basic "BuyCraft" implementation written in PHP for pure vanilla Minecraft serv
 - php7.0.9+ (This is recommended, but not required. **I built this in php7.0.9, and cannot promise it will work in other versions!**)
 
 ## Ports
-* __[PHP (Slim3+Twig) - Uses PayPal]https://github.com/RedDuckss/PHP-Vanilla-Buycraft/)__
+- __[PHP (Slim3+Twig) - Uses PayPal](https://github.com/RedDuckss/PHP-Vanilla-Buycraft/)__
 
 # Setup
 ## For an explanation on the core concepts used here, refer to *Soon-to-be-video-url*
