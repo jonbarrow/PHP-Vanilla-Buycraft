@@ -20,8 +20,6 @@ class Home extends Controller {
 
 	public function index($request, $response) {
 
-		phpinfo();
-
 		if (isset($_SESSION['playerName'])) {
 			unset($_SESSION['playerName']);
 		}
