@@ -7,6 +7,9 @@ A basic "BuyCraft" implementation written in PHP for pure vanilla Minecraft serv
 - Composer
 - php7.0.9+ (This is recommended, but not required. **I built this in php7.0.9, and cannot promise it will work in other versions!**)
 
+## Ports
+- __[PHP (Slim3+Twig) - Uses PayPal]https://github.com/RedDuckss/PHP-Vanilla-Buycraft/)__
+
 # Setup
 ## For an explanation on the core concepts used here, refer to *Soon-to-be-video-url*
 To build from source:
@@ -18,6 +21,9 @@ To build from source:
 - Travel to the `public` folder
 - Edit `install.php` to match your database credentials
 - Run `install.php`
+
+# Going Live
+When working with the PayPal REST api you are given 2 sets of client/secret keys. One key is for sandbox use and one is for live use. Sandbox use does NOT use real money, and does NOT accept real PayPal accounts for transactions (only test sandbox accounts, which you create). **YOU SHOULD ONLY DEVELOP WHILE IN SANDBOX MODE, USING THE SANDBOX KEYS**. To go live and accepting REAL payments from REAL customers, you must change the client/secret keys to the `Live` keys, as well as uncomment the `Going Live` section of `app.php`
 
 # Adding sections and items
 This repo is **NOT** meant to be used as-is, though there is basic as-is support. This repo is designed to be a base with which you build your **OWN** application(s). That being said, if you MUST use this repo as-is, you can add sections and items very easily.
