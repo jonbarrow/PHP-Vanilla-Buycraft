@@ -1,0 +1,13 @@
+{
+    "require": {
+        "slim/slim": "^3.8",
+        "slim/twig-view": "^2.2",
+        "phpmailer/phpmailer": "^5.2",
+        "paypal/rest-api-sdk-php": "*"
+    },
+    "autoload": {
+        "psr-4": {
+        	"VBCraft\\": "app"
+        }
+    }
+}

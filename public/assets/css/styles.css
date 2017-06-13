@@ -1,0 +1,93 @@
+::-webkit-scrollbar {
+	width: 0px;
+		height: 0px;
+}
+::-webkit-scrollbar-button {
+		width: 0px;
+		height: 0px;
+}
+
+.color-black {
+	color: #000000;
+}
+
+.color-dark_blue {
+	color: #0000AA;
+}
+
+.color-dark_green {
+	color: #00AA00;
+}
+
+.color-dark_aqua {
+	color: #00AAAA;
+}
+
+.color-dark_red {
+	color: #AA0000;
+}
+
+.color-dark_purple {
+	color: #AA00AA;
+}
+
+.color-gold {
+	color: #FFAA00;
+}
+
+.color-gray {
+	color: #AAAAAA;
+}
+
+.color-dark_gray {
+	color: #555555;
+}
+
+.color-blue {
+	color: #5555FF;
+}
+
+.color-green {
+	color: #55FF55;
+}
+
+.color-aqua {
+	color: #55FFFF;
+}
+
+.color-red {
+	color: #FF5555;
+}
+
+.color-light_purple {
+	color: #FF55FF;
+}
+
+.color-yellow {
+	color: #FFFF55;
+}
+
+.color-white {
+	color: #FFFFFF;
+}
+
+.donations-donor-recent {
+	margin-left: 10px;
+}
+
+.progress, .progress-container, .panel-body, .panel {
+	padding-bottom: 0;
+	margin-bottom: 0;
+
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.img-center {
+	margin: 0 auto;
+}
+
+.donations-donor-recent img {
+	float: left;
+	margin-right: 0.5rem;
+}
