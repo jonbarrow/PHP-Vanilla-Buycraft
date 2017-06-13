@@ -2,8 +2,8 @@
 A basic "BuyCraft" implementation written in PHP for pure vanilla Minecraft servers.
 
 # Requirements
-- A PayPal developer and busniess account (if using paypal)
-- A PayPal developer app using the REST api (if using paypal)
+- A PayPal developer and business account (if using paypal)
+- A PayPal developer app using the REST API (if using paypal)
 - Composer
 - php7.0.9+ (This is recommended, but not required. **I built this in php7.0.9, and cannot promise it will work in other versions!**)
 
@@ -43,7 +43,7 @@ To build from source:
 - Travel to the `public` folder
 - Edit `install.php` to match your database credentials
 - Run `install.php`
-### To host this project as-is you must have either a shared host which gives you access to composer/SSH or a VPS and install composer in order to download the dependencies. I recomend XenonHosting, as they have very afforable shared hosting (starting at $1/m) with SSH access, and VPS hosting starting at $3/m [http://xenonhosting.co.uk/](http://xenonhosting.co.uk/)
+### To host this project as-is you must have either a shared host which gives you access to composer/SSH or a VPS and install composer in order to download the dependencies. I recommend XenonHosting, as they have very affordable shared hosting (starting at $1/m) with SSH access, and VPS hosting starting at $3/m [http://xenonhosting.co.uk/](http://xenonhosting.co.uk/)
 
 # Going Live
 When working with the PayPal REST api you are given 2 sets of client/secret keys. One key is for sandbox use and one is for live use. Sandbox use does NOT use real money, and does NOT accept real PayPal accounts for transactions (only test sandbox accounts, which you create). **YOU SHOULD ONLY DEVELOP WHILE IN SANDBOX MODE, USING THE SANDBOX KEYS**. To go live and accepting REAL payments from REAL customers, you must change the client/secret keys to the `Live` keys, as well as uncomment the `Going Live` section of `app.php`
