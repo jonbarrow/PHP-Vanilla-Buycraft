@@ -16,8 +16,11 @@ Both the command and message support several placeholders for data based on the 
 
 # Placeholders
 > {product} -> placeholder which displays the bought product
+> 
 > {amount}  -> placeholder which displays the amount of the product
+> 
 > {price}   -> placeholder which displays the price of the product
+> 
 > {player}  -> placeholder which displays the player who bought the product
 
 Example usage (command):
