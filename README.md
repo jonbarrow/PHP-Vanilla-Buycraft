@@ -1,6 +1,11 @@
 # PHP-Vanilla-Buycraft
 A basic "BuyCraft" implementation written in PHP for pure vanilla Minecraft servers.
 
+![demo](http://i.imgur.com/jJ8rJSz.gif)
+
+# DISCLAIMER
+This codebase has NOTHING to do with the official BuyCraft plugin or it's developers. I am simply borrowing the name to help users understand what this does, and what it's for. This is not a wrapper around BuyCraft or it's API. This is a stand-alone project with no real affiliation to BuyCraft
+
 # Requirements
 - A PayPal developer and business account (if using paypal)
 - A PayPal developer app using the REST API (if using paypal)
