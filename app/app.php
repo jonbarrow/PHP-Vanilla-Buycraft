@@ -14,39 +14,25 @@ $site_root = (!empty($_SERVER['HTTPS']) ? 'https':'http').'://'.$_SERVER['HTTP_H
 define('SITE_URL', $site_root);
 
 /*****************************************************************************************************
-
 SANDBOX
-
 $clientId = 'CLIENT TOKEN FOR SANDBOX';
 $clientSecret = 'SECRET TOKEN FOR SANDBOX';
-
-
 *****************************************************************************************************/
-
 /*****************************************************************************************************
-
 LIVE
-
 $clientId = 'CLIENT TOKEN FOR LIVE';
 $clientSecret = 'SECRET TOKEN FOR LIVE';
-
-
 *****************************************************************************************************/
-
 $clientId = 'CLIENT TOKEN';
 $clientSecret = 'SECRET TOKEN';
-
 $paypal = new \PayPal\Rest\ApiContext(
         new \PayPal\Auth\OAuthTokenCredential(
             $clientId,
             $clientSecret
         )
     );
-
 /***
-
 COMMENT THIS OUT WHEN YOU WANT TO GO LIVE, AND ACCEPT REAL MONEY
-
 $paypal->setConfig(
     array(
         'mode' => 'live',
@@ -58,12 +44,10 @@ $paypal->setConfig(
     )
 );
 ***/
-
 $store_host = 'database_host';
 $store_dbuser = 'database_username';
 $store_dbpass = 'database_password';
 $store_dbname = 'vanillabuycraft';
-
 $configDB = [
     'store' => [
         'host' => $store_host,
@@ -73,7 +57,6 @@ $configDB = [
     ]
         
 ];
-
 $configServer = [
     'rcon' => [
         'host' => "SERVER IP",
@@ -99,8 +82,11 @@ $app = new \Slim\App($config);
 
 $container = $app->getContainer();
 
-include_once __DIR__ . '/Middleware/TrailingSlashMiddleware.php';
 include_once __DIR__ . '/containers/containers.php';
 include_once __DIR__ . '/routes/routes.php';
 
+include_once __DIR__ . '/Middleware/TrailingSlashMiddleware.php';
+include_once __DIR__ . '/Middleware/GlobalSetMiddleware.php';
+
 $app->add(new VBCraft\Middleware\TrailingSlashMiddleware($container));
+$app->add(new VBCraft\Middleware\GlobalSetMiddleware($container));
